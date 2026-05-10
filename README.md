@@ -34,8 +34,6 @@
 
 ## 📸 效果预览
 
-> 截图占位 — 欢迎贡献实际使用截图
-
 | 桌面端 | 移动端 |
 |:---:|:---:|
 | ![桌面端截图](./screenshots/desktop.png) | ![移动端截图](./screenshots/mobile.png) |
@@ -48,23 +46,27 @@ git clone https://github.com/GitHub-0219/AI-prompt.git
 cd AI-prompt
 
 # 直接打开即可使用（无需任何依赖）
-open index.html        # macOS
+open ai-prompts-search/index.html        # macOS
 # 或
-xdg-open index.html    # Linux
+xdg-open ai-prompts-search/index.html    # Linux
 # 或
-start index.html       # Windows
+start ai-prompts-search/index.html       # Windows
 ```
 
-> 💡 **提示**：也可以直接双击 `index.html` 文件在浏览器中打开。
+> 💡 **提示**：也可以直接双击 `ai-prompts-search/index.html` 文件在浏览器中打开。
 
 ## 📂 项目结构
 
 ```
 AI-prompt/
-├── index.html    # 🏠 主页面
-├── style.css     # 🎨 样式文件
-├── script.js     # ⚙️ 交互逻辑
-└── data.js       # 📦 提示词数据库
+├── ai-prompts-search/       # 📦 主应用目录
+│   ├── index.html           #   🏠 主页面
+│   ├── style.css            #   🎨 样式文件
+│   ├── script.js            #   ⚙️ 交互逻辑
+│   └── data.js              #   📦 提示词数据库
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ## 🏷️ 提示词分类
@@ -82,7 +84,7 @@ AI-prompt/
 
 ### 添加自定义提示词
 
-编辑 `data.js` 文件，按照以下格式添加：
+编辑 `ai-prompts-search/data.js` 文件，按照以下格式添加：
 
 ```javascript
 {
@@ -110,7 +112,7 @@ AI-prompt/
 
 1. **Fork** 本仓库
 2. 创建功能分支：`git checkout -b feature/add-prompts`
-3. 在 `data.js` 中添加提示词（遵循格式规范）
+3. 在 `ai-prompts-search/data.js` 中添加提示词（遵循格式规范）
 4. 提交更改：`git commit -m 'feat: add new prompts for xxx'`
 5. 推送到分支：`git push origin feature/add-prompts`
 6. 创建 **Pull Request**
